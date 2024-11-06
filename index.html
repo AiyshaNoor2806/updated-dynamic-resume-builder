@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder by Aiysha Noor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="main-heading">
+            <h1>Dynamic Resume Builder by Aiysha Noor</h1>
+            <p>Build your resume instantly by filling in essential details below.</p>
+        </header>
+
+        <div class="form-wrapper">
+            <!-- Resume Form -->
+            <section class="form-section">
+                <form id="resume-form">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+
+                        <label for="profile-photo">Upload Profile Photo</label>
+                        <input type="file" id="profile-photo" accept="image/*">
+
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="John Doe" required>
+                        
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="john.doe@example.com" required>
+                        
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" placeholder="+1234567890" required>
+                        
+                        <label for="address">Address</label>
+                        <input type="text" id="address" placeholder="1234 Elm St, City, Country" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Education</legend>
+                        <label for="education">Highest Qualification</label>
+                        <textarea id="education" rows="3" placeholder="Your education details..." required></textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Experience</legend>
+                        <label for="company-name">Company</label>
+                        <textarea id="company-name" rows="2" placeholder="Company name..." required></textarea>
+                        
+                        <label for="designation-name">Designation</label>
+                        <textarea id="designation-name" rows="2" placeholder="Job title..." required></textarea>
+                        
+                        <label for="experience-details">Experience Details</label>
+                        <textarea id="experience-details" rows="4" placeholder="Your job role and responsibilities..." required></textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Skills</legend>
+                        <textarea id="skills" rows="3" placeholder="Comma-separated skills..." required></textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Languages</legend>
+                        <textarea id="languages" rows="2" placeholder="Languages you speak..." required></textarea>
+                    </fieldset>
+
+                    <button type="submit">Generate Resume</button>
+                </form>
+            </section>
+
+            <!-- Resume Preview -->
+            <section class="preview-section">
+                <h2>Resume Preview</h2>
+                <div id="resume-preview">
+                    <img id="profile-photo-preview" src="" alt="Profile Photo" style="display: none;">
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
